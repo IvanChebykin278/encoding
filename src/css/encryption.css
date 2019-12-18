@@ -1,0 +1,62 @@
+.content {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width:  50%;
+    margin: 15px;
+}
+
+.tag {
+    text-align: right;
+}
+
+  .my-appear {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  .my-appear-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 500ms, transform 500ms;
+  }
+
+  .my-enter {
+    transform: translateX(-100%);
+  }
+  .my-enter-active {
+    transform: translateX(0);
+    transition: transform 500ms;
+  }
+  .my-exit {
+    transform: translateX(0);
+  }
+  .my-exit-active {
+    transform: translateX(-100%);
+    transition: transform 500ms;
+  }
+
+  .my1-enter {
+    transform: translateX(100%);
+  }
+  .my1-enter-active {
+    transform: translateX(0);
+    transition: transform 500ms;
+  }
+  .my1-exit {
+    transform: translateX(0);
+  }
+  .my1-exit-active {
+    transform: translateX(100%);
+    transition: transform 500ms;
+  }
+
+  .output {
+    width: 100%;
+  }
